@@ -1,4 +1,4 @@
-package com.example.springbootstarterhello;
+package com.hello;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

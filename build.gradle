@@ -4,6 +4,7 @@ plugins {
 	id 'java'
 }
 
+apply plugin: 'maven-publish'
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
@@ -11,9 +12,9 @@ sourceCompatibility = '1.8'
 repositories {
 	mavenCentral()
 }
-
+//Don't import "spring-boot-starter-web"
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-configuration-processor'
 	implementation 'org.springframework.boot:spring-boot-autoconfigure'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
