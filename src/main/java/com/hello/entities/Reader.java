@@ -1,4 +1,4 @@
-package main.java.com.hello.entities;
+package com.hello.entities;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -11,6 +11,8 @@ import java.util.Collection;
 
 @Entity
 public class Reader implements UserDetails {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     private String username;
